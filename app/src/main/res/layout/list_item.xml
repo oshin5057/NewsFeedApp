@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_16dp"
+    android:background="@drawable/background_list_item">
+
+    <TextView
+        android:id="@+id/author_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        tools:text="@string/guardian_tv"
+        android:fontFamily="serif"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/section_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        tools:text="@string/politics_tv"
+        android:fontFamily="serif"
+        android:textColor="@color/dark_red"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section_tv"
+        tools:text="@string/news_tv"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/title_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        tools:text="10:00:11"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/title_tv"
+        android:layout_toLeftOf="@id/time_tv"
+        tools:text="20-01-2020"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+</RelativeLayout>
