@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         Uri baseUri = Uri.parse(News_REQUEST_URL);
         Uri.Builder uriBuilder = baseUri.buildUpon();
-        uriBuilder.appendQueryParameter("api-key","test");
+        uriBuilder.appendQueryParameter("api-key","YOUR_KEY");
         uriBuilder.appendQueryParameter("show-tags","contributor");
 
         return new NewsLoader(this, uriBuilder.toString());
